@@ -33,23 +33,23 @@ function Projects() {
       </h3>
 
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
-        {projects.map((projects, i) => (
+        {projects.map((project, i) => (
           <div
-            key={projects}
+            key={project}
             className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen mt-20"
           >
             <div className="space-y-10 px-0 md:px-10 max-w-6xl  font-chivomonoreg">
               <h4 className="text-2xl font-semibold text-center">
                 <span className="underline decoration-[#F7AB0A]/50">
-                  Project {i + 1}:
+                  Project {i + 1} of {projects.length}:
                 </span>{" "}
-                <Link href={projects.link} className="hover:text-[#F7AB0A]">
-                  {projects.name}
+                <Link href={project.link} className="hover:text-[#F7AB0A]">
+                  {project.name}
                 </Link>
               </h4>
 
               <p className="text-lg text-center md:text-left">
-                {projects.description}
+                {project.description}
               </p>
             </div>
           </div>
