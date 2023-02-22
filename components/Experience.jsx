@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ExperienceCard from "./ExperienceCard";
+import Aquabots from "./Aquabots";
+import CVS from "./CVS";
 
 function Experience() {
   return (
@@ -18,10 +19,9 @@ function Experience() {
         Experience
       </h3>
 
-      <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory">
-        <ExperienceCard />
-        <ExperienceCard />
-        <ExperienceCard />
+      <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory top-24">
+        <Aquabots />
+        <CVS />
       </div>
     </motion.div>
   );

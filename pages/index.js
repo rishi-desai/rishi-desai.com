@@ -9,6 +9,7 @@ import ContactMe from "../components/ContactMe";
 import Link from "next/link";
 import Image from "next/image";
 import pfp from "../public/assets/pfp.png";
+import { AiFillHome } from "react-icons/ai";
 
 export default function Home() {
   return (
@@ -18,6 +19,8 @@ export default function Home() {
     >
       <Head>
         <title>Rishi&apos;s Portfolio</title>
+        <meta name="description" content="Portolio showcasing my work." />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       {/* Header */}
@@ -56,11 +59,7 @@ export default function Home() {
       <Link href="#hero">
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
-            <Image
-              src={pfp}
-              alt=""
-              className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
-            />
+            <AiFillHome className="homeButton h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer" />
           </div>
         </footer>
       </Link>

@@ -1,7 +1,8 @@
 import React from "react";
-import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
+import { IconContext } from "react-icons";
 
 function Header() {
   return (
@@ -21,16 +22,16 @@ function Header() {
         className="flex flex-row items-center"
       >
         {/* Social Icons */}
-        <SocialIcon
-          url="https://www.linkedin.com/in/rishiidesai/"
-          fgColor="gray"
-          bgColor="transparent"
-        />
-        <SocialIcon
-          url="https://github.com/rishi-desai"
-          fgColor="gray"
-          bgColor="transparent"
-        />
+        <IconContext.Provider value={{ color: "gray" }}>
+          <div className="flex flex-row space-x-4">
+            <Link href="https://www.linkedin.com/in/rishiidesai/">
+              <AiFillLinkedin className="h-6 w-6 md:h-8 md:w-8 bg-transparent" />
+            </Link>
+            <Link href="https://github.com/rishi-desai">
+              <AiFillGithub className="h-6 w-6 md:h-8 md:w-8 bg-transparent" />
+            </Link>
+          </div>
+        </IconContext.Provider>
       </motion.div>
 
       <motion.div
@@ -45,16 +46,13 @@ function Header() {
           scale: 1,
         }}
         transition={{ duration: 1.5 }}
-        className="flex flex-row items-center text-gray-300 cursor-pointer"
+        className="flex flex-row items-center text-gray-300 cursor-pointer space-x-4"
       >
-        <Link href="#contact">
-          <SocialIcon
-            className="cursor-pointer"
-            network="email"
-            fgColor="gray"
-            bgColor="transparent"
-          />
-        </Link>
+        <IconContext.Provider value={{ color: "gray" }}>
+          <Link href="#contact">
+            <AiFillMail className="cursor-pointer h-6 w-6 md:h-8 md:w-8 bg-transparent" />
+          </Link>
+        </IconContext.Provider>
         <p className="font-chivomonoreg uppercase hidden md:inline-flex text-sm text-gray-400">
           Get In Touch
         </p>
