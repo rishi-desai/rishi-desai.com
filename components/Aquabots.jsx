@@ -10,7 +10,7 @@ import {
   DiPython,
 } from "react-icons/di";
 
-function ExperienceCard() {
+function Aquabots() {
   return (
     <article
       className="flex flex-col rounded-lg items-center space-x-7 space-y-7 flex-shrink-0 w-[500px] 
@@ -59,13 +59,18 @@ function ExperienceCard() {
 
         {/* Job Descriptions */}
         <ul className="list-disc space-y-4 ml-5 text-lg">
-          <li>Test Description</li>
-          <li>Test Description</li>
-          <li>Test Description</li>
+          <li>
+            Developed an aquatic vehicle GUI using JavaScript, HTML/CSS, and ROS
+            nodes.
+          </li>
+          <li>
+            Utilized sonar data to create a SLAM algorithm that virtualized the
+            vehicles surrounding environment.
+          </li>
         </ul>
       </div>
     </article>
   );
 }
 
-export default ExperienceCard;
+export default Aquabots;
