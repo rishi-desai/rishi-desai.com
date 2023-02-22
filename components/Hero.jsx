@@ -2,7 +2,7 @@ import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import Image from "next/image";
-import pfp from "../public/assets/pfp.png";
+import selfie from "../public/assets/selfie.png";
 import Link from "next/link";
 
 function Hero() {
@@ -19,7 +19,7 @@ function Hero() {
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
       <Image
-        src={pfp}
+        src={selfie}
         alt="Picture of Rishi Desai"
         className="relative rounded-full h-32  w-32 mx-auto object-cover"
       />
