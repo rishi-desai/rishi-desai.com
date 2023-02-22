@@ -1,6 +1,25 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Skill from "../components/Skill";
+import {
+  SiFirebase,
+  SiVisualstudio,
+  SiPython,
+  SiJava,
+  SiJavascript,
+  SiSwift,
+  SiCss3,
+  SiHtml5,
+  SiTailwindcss,
+  SiReact,
+  SiMysql,
+  SiNextdotjs,
+  SiFlask,
+  SiNodedotjs,
+  SiDocker,
+  SiNumpy,
+  SiPandas,
+  SiJupyter,
+} from "react-icons/si";
 
 function Skills() {
   return (
@@ -15,25 +34,25 @@ function Skills() {
         Skills
       </h3>
 
-      <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm font-chivomonoreg">
-        Hover over skill for current proficiency
-      </h3>
-
       <div className="grid grid-cols-4 gap-5">
-        <Skill directionLeft={true} />
-        <Skill directionLeft={true} />
-        <Skill directionLeft={true} />
-        <Skill directionLeft={true} />
-        <Skill directionLeft={true} />
-        <Skill directionLeft={true} />
-        <Skill directionLeft={true} />
-        <Skill directionLeft={true} />
-        <Skill directionLeft={false} />
-        <Skill directionLeft={false} />
-        <Skill directionLeft={false} />
-        <Skill directionLeft={false} />
-        <Skill directionLeft={false} />
-        <Skill directionLeft={false} />
+        <SiFirebase className="skills" />
+        <SiVisualstudio className="skills" />
+        <SiPython className="skills" />
+        <SiJava className="skills" />
+        <SiJavascript className="skills" />
+        <SiSwift className="skills" />
+        <SiCss3 className="skills" />
+        <SiHtml5 className="skills" />
+        <SiTailwindcss className="skills" />
+        <SiReact className="skills" />
+        <SiMysql className="skills" />
+        <SiNextdotjs className="skills" />
+        <SiFlask className="skills" />
+        <SiNodedotjs className="skills" />
+        <SiDocker className="skills" />
+        <SiPandas className="skills" />
+        <SiNumpy className="skills" />
+        <SiJupyter className="skills" />
       </div>
     </motion.div>
   );

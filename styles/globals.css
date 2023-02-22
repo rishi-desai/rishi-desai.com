@@ -34,6 +34,11 @@
 
   .homeButton {
     @apply p-1 border border-[#242424] rounded-full uppercase text-xs tracking-widest 
-    text-gray-500 transition-all hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40;
+    text-gray-500 transition-all hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40
+  }
+
+  .skills {
+    @apply rounded-full border border-transparent object-cover h-20 w-20 md:h-24 md:w-24 
+     filter group-hover:bg-gray-500 transition duration-300 ease-in-out
   }
 }

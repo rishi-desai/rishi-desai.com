@@ -8,7 +8,7 @@ function CVS() {
     <article
       className="flex flex-col rounded-lg items-center space-x-7 space-y-7 flex-shrink-0 w-[500px] 
     md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 
-    cursor-pointer transition-opacity duration-200 overflow-hidden mt-25"
+    cursor-pointer transition-opacity duration-200 overflow-hidden mt-20"
     >
       <motion.div
         initial={{
@@ -51,8 +51,8 @@ function CVS() {
             fast and accurate transaction processing.
           </li>
           <li>
-            Exceeded team goals and collaborated with staff to implement
-            customer service initiatives.
+            Engaged customers while solving issues and providing solutions with
+            fast and accurate transaction processing.
           </li>
         </ul>
       </div>
