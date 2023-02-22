@@ -41,7 +41,7 @@ function About() {
           background
         </h4>
         <p className="text-base font-chivomonoreg ">
-          I'm Rishi, I am an undergraduate computer science student at the
+          I&apos;m Rishi, I am an undergraduate computer science student at the
           Georgia Institute of Technology. I am passionate about software
           engineering, data science, and artificial intelligence.
         </p>
