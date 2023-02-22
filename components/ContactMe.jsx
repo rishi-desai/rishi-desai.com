@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillPhone, AiFillMail } from "react-icons/ai";
+import { AiFillFileText, AiFillMail } from "react-icons/ai";
 import { useForm } from "react-hook-form";
 
 function ContactMe() {
@@ -31,10 +31,18 @@ function ContactMe() {
         </h4>
 
         <div className="space-y-10">
-          {/* <div className="flex items-center space-x-5 justify-center">
-            <AiFillPhone className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-xl">+1 (678) 612-3215</p>
-          </div> */}
+          <div className="flex items-center space-x-5 justify-center">
+            <AiFillFileText className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
+            <a
+              href="/assets/RishiDesaiResume.pdf"
+              alt="alt text"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl"
+            >
+              Resume
+            </a>
+          </div>
 
           <div className="flex items-center space-x-5 justify-center">
             <AiFillMail className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
